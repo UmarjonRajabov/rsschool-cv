@@ -214,7 +214,7 @@ pre {
 
 .edu__timeline-card:before {
     content: "";
-    display: inline-block;
+    display: block;
     position: absolute;
     background-color: #fff;
     border-radius: 10px;
@@ -241,7 +241,7 @@ pre {
 
 .edu__timeline-card:after {
     content: "";
-    display: inline-block;
+    display:block;
     position: absolute;
     background-color: #37bc9b;
     width: 29px;
