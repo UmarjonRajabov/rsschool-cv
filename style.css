@@ -78,7 +78,6 @@ body {
 }
 
 .profile-bg {
-    background: url(imzo.jpg) no-repeat center;
     position: relative;
     background-size: cover;
     display: flex;
