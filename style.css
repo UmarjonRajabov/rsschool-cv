@@ -93,6 +93,11 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     transition: all 0.2s ease-in-out;
 }
+img{
+    width: 25%;
+    max-height: 25%;
+    display: inline-block; /* remove extra space below image */
+}
 .profile-img:hover {
     top: 55px;
 }
@@ -116,12 +121,13 @@ body {
 /* =====  ABOUT ===== */
 
 .about {
-    margin-top: 50px;
+    margin-top: 500px;
     padding: 0 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     border-bottom: 1px solid #c3c9d1;
+    top:900px;
 }
 
 .title {
@@ -160,12 +166,12 @@ body {
 .skills__item {
     padding: 10px;
     margin-bottom: 5px;
-    background-color: #c0cee2;
+    background-color: #e2dfc0;
     font-size: 18px;
 }
 .skills__item i {
     font-size: 28px;
-    color: #0c2461;
+    color: #610c28;
     margin-left: 5px;
     width: 35px;
 }
@@ -180,7 +186,7 @@ body {
 /* == Code Section ===  */
 
 pre {
-    background-color: #c0cee2;
+    background-color: rgb(98, 128, 0);
 }
 
 .func {
