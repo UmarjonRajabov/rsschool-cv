@@ -1,2 +1,2 @@
 # rsschool-cv
-https://umarjonrajabov.github.io/online-zoo/
+https://umarjonrajabov.github.io/online-zoo/online-zoo/
