@@ -1,245 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <h1 class="header__title">Umarjon Rajabov</h1>
-                <nav class="sosial-links">
-                    <a href="https://www.linkedin.com/in/umarjon-rajabov/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/UmarjonRajabov"><i class="fab fa-github-square"></i></a>
-                    <a href="umarjon.rajabov95@gmail.com"><i class="fas fa-envelope"></i></a>
-                </nav>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PetStory</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <div class="wrapper">
+        <h1 class="logo">
+          <a href="index.html">PetStory online</a>
+        </h1>
+        <div class="menu">
+          <nav class="menu_body">
+            <ul>
+              <li><a class="active-menu-item" href="#">About</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="#">Zoos</a></li>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li>
+                <a
+                  href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1"
+                  >Designed by <span>&copy;</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="burger_icon">
+            <span></span>
+          </div>
         </div>
+      </div>
     </header>
-    <main class="page-content">
-        <div class="container">
-            <div class="cover">
-                <section class="profile">
-                    <div class="profile-bg">
-                        <div class="profile-img">
-                            <img src="nom.jpg" alt="profile image">
-                        </div>
-                        <div class="profile-name">
-                            <h2>Umarjon Rajabov</h2>
-                            <h4>Front End Developer</h4>
-                        </div>
-                    </div>
-                </section>
-                <section class="about section">                    
-                    <div class="about__info">
-                        <h3>About me</h3>
-                        <ul class="about__info-items">
-                            <li class="about__info-item--right">Age</li>
-                            <li class="about__info-item">27</li>
-                            <li class="about__info-item--right">Email</li>
-                            <li class="about__info-item">umarjonrajabov95@@gmail.com</li>
-                            <li class="about__info-item--right">Phone</li>
-                            <li class="about__info-item">+998 (90) 329-92-95</li>
-                            <li class="about__info-item--right">Address</li>
-                            <li class="about__info-item"> Devkent st. Buxoro, Uzbekistan</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="skills section">
-                    <div class="skills__header">
-                        <h2 class="title">Professional Skills</h2>
-                    </div>
-                    <ul class="skills__items">
-                        <li class="skills__item">
-                            <i class="fab fa-html5"></i>
-                            <a><span>HTML</span> (Semantic, Accessibility)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-css3-alt"></i>
-                            <a><span>CSS</span> (Bootstrap, BEM)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-sass"></i>
-                            <a><span>SCSS</span> (SMACSS Architecture)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-js-square"></i>
-                            <a><span>JavaScript</span> (Fundamentals,Functional Programming,
-                                OOP, Asynchronous JavaScript, ES6+,DOM)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-git-alt"></i>
-                            <a>Version control:<span>Git</span></a>
-                            <i class="fab fa-github"></i>
-                            <a><span>GitHub</span></a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-python"></i>
-                            <a><span>Python</span>( basic knowledge)</a>
-                            <a><span>C</span>(basic knowledge)</a>
-                            <a><span>Flask</span>(basic knowledge)</a>
-                            <a><span>SQLite</span> (basic knowledge)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-windows"></i>
-                            <a><span>Windows</span>,</a>
-                            <i class="fab fa-ubuntu"></i>
-                            <a><span>Linux</span> (Ubuntu)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fab fa-figma"></i>
-                            <a><span>Figma</span>(for web development)</a>
-                        </li>
-                        <li class="skills__item">
-                            <i class="fas fa-laptop-code"></i>
-                            <a>Editors: </a>
-                            <span>Sublime</span>
-                            <span>Brackets</span>
-                            <span>VS Code</span>
-                            <span>PyCharm Community</span>
-                        </li>
-                    </ul>
-                </section>
-                <section class="code section">
-                    <div class="code__inner">
-                        <h2 class="title">Code example</h2>
-                        <pre>
-                            <code>
-                                <span>function</span> <span class="func">findLongestWord</span>(text) {
-                                        <span>let</span> words = text.split(" ");
-                                        <span>let</span>  word = "";
-                                        <span class="if">for</span> (<span>let</span> item of words) {
-                                                <span class="if">if</span> (word.length &lt; item.length) {
-                                                    word = item;
-                                                }
-                                        }
-                                        return (word);
-                                }
-                                <span>const</span> <span class="if">longestWord</span> = <span class="func">findLongestWord</span>("Word");
-                                <span class="func">console</span>.<span class="if">log</span>(longestWord);
-                            </code>
-                          </pre>
-                    </div>
-                </section>
-                <section class="project section">
-                    <div class="project_inner">
-                        <h2>Rsschool CV Task</h2>
-                    </div>
-                    <div class="project_itself">
-                        <a href="https://umarjonrajabov.github.io/rsschool-cv/">My CV</a>
-                    </div>
 
-                </section>
-                <section class="edu section">
-                    <div class="edu__inner">
-                        <h2 class="title">Education</h2>
-                    </div>
-                    <div class="edu__timeline">
-                        <div class="edu__timeline-card card-success">
-                            <div class="card-body">
-                                <div class="edu-head">
-                                    INHA University in Tashkent
-                                    <span class="text-small">Bachelor,Tashkent city</span>
-                                </div>
-                                <div class="edu-time">2016 - 2020</div>
-                                <div>Faculty of Computer Science. Bachelor degree.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu__timeline">
-                        <div class="edu__timeline-card card-success">
-                            <div class="card-body">
-                                <div class="edu-head">at University</div>
-                                <div>
-                                    Basic knowledge of programming and algorithm knowledge using
-                                    C language.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu__timeline">
-                        <div class="edu__timeline-card card-success">
-                            <div class="card-body">
-                                <div class="edu-head">Profi School</div>
-                                <div>
-                                    Basic and advanced knowledge of web development knowledge
-                                    using JavaScript.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu__timeline">
-                        <div class="edu__timeline-card card-success">
-                            <div class="card-body">
-                                <div class="edu-head">Data Structures</div>
-                                <div>
-                                    Introduction to programming,Algorithms, Pseudocode, Syntax,
-                                    Data Types, Operators. Booleans, CommandLine Interaction,
-                                    Functions
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="edu section">
-                    <div class="edu__inner">
-                        <h2 class="title">Languages</h2>
-                    </div>
-                    <div class="edu__timeline">
-                        <div class="edu__timeline-card card-success">
-                            <div class="card-body">
-                                <div class="edu-head">
-                                    Uzbek <span class="text-small">[Native]</span>
-                                </div>
-                                <div class="edu-head">
-                                    Tadjik <span class="text-small">[Upper Intermediate]</span>
-                                </div>
-                                <div class="edu-head">
-                                    Russian <span class="text-small">[Intermediate]</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu__timeline">
-                        <div class="edu__timeline-card card-success">
-                            <div class="card-body">
-                                <div class="edu-head">English</div>
-                                <div class="mb-1">
-                                    EPAM English test result: <span class="bold">B1</span>
-                                </div>
-                                <div class="mb-1">
-                                    I try to learn English in every possible way. 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+    <!-- Watch section -->
+    <section class="watch">
+      <div class="wrapper">
+        <div class="watch_body">
+          <p>WATCH YOUR <span>FAVORITE</span> ANIMAL ONLINE</p>
+          <button class="button1 button_color_default">WATCH ONLINE</button>
         </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="footer__links">
-                    <a href="https://rs.school/" target="_blank"><img src="rs_school.svg" alt="rs_school_js"></a>
-                    <a href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug" target="_blank"><i
-                            class="fab fa-youtube-square"></i>youtube</a>
-                    <a href="https://github.com/UmarjonRajabov" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
-                </div>
-                <div class="author">
-                    <a href="https://umarjonrajabov.github.io/rsschool-cv/" target="_blank">
-                        &copy; Umarjon Rajabov</a>
-                </div>
-            </div>
+      </div>
+    </section>
+
+    <!-- The Backstage section -->
+    <section class="backstage">
+      <div class="wrapper">
+        <div class="backstage_image_container"></div>
+        <article>
+          <h2>The Backstage of the Wilderness World.</h2>
+          <p>
+            The site was founded on the basis of a volunteer movement to protect
+            and care for animals.
+          </p>
+          <h3>How it works</h3>
+          <p>
+            The main goal is to help the animals, as well as the nature reserves
+            and zoos where they are kept. We are currently working on video
+            projects targeting pandas in China, eagles on an island near Los
+            Angeles, alligators in Florida and gorillas in the Congo. These have
+            a total of more than 1,500 mammals and reptiles.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pet Cards section -->
+    <section class="pet_cards">
+      <div class="wrapper">
+        <div class="slider">
+          <div class="slider_window"></div>
+
+          <button class="button_slider prev"></button>
+          <button class="button_slider next"></button>
         </div>
+
+        <button class="button1 button_color_default" id="goToMap">
+          CHOOSE YOUR FAVORITE
+        </button>
+      </div>
+    </section>
+
+    <!-- Pick and feed section -->
+    <section class="friend">
+      <div class="wrapper">
+        <div class="friend_info">
+          <h2>Pick and feed a friend</h2>
+          <p>
+            We know the animals bring you joy, and in these extraordinary times,
+            we’re glad.
+          </p>
+          <p>
+            During a time when the COVID-19 epidemic is touching all of our
+            lives, we’re proud and glad that people around the world find joy in
+            PetStory
+          </p>
+          <p>
+            Even though the zoo has reopened, we need you now more than ever to
+            help us deal with these problems. Please consider a gift to our
+            <a href="#">Emergency Support Fund</a> .
+          </p>
+        </div>
+        <div class="friend_map">
+          <h3>How it works</h3>
+          <div class="feed">
+            <div class="step">
+              <div class="step_img pay-card"></div>
+              <p>Pay with card</p>
+            </div>
+            <!-- <div class="nextStep"></div> -->
+            <div class="step">
+              <div class="step_img plant"></div>
+              <p>Payment goes to the zoo</p>
+            </div>
+            <!-- <div class="nextStep"></div> -->
+            <div class="step">
+              <div class="step_img monkey"></div>
+              <p>Your favorite animal gets delicious dish</p>
+            </div>
+          </div>
+          <a href="#" class="button1 button_color_default">
+            FEED A FRIEND NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials">
+      <div class="wrapper">
+        <h3>Testimonials</h3>
+        <div class="wrap_window">
+          <div class="stories">
+            <div class="wrap_story">
+              <article class="story">
+                <div class="modal_close"></div>
+                <figure>
+                  <img src="./assets/icons/user_icon.svg" alt="user icon" />
+                  <figcaption>
+                    <p class="user_name">Michael John</p>
+                    <div>
+                      <p class="user_data">Local Austria</p>
+                      <p class="user_data">Yesterday</p>
+                    </div>
+                  </figcaption>
+                </figure>
+                <div class="testimonial">
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="wrap_story">
+              <article class="story">
+                <div class="modal_close"></div>
+                <figure>
+                  <img src="./assets/images/user1.jpg" />
+                  <figcaption>
+                    <p class="user_name">Oskar Samborsky</p>
+                    <div>
+                      <p class="user_data">Local Austria</p>
+                      <p class="user_data">Yesterday</p>
+                    </div>
+                  </figcaption>
+                </figure>
+                <div class="testimonial">
+                  <p>
+                    Online zoo is one jf the ways to instill a love for
+                    animals.The best online zoo I’ve met. My son delighted very
+                    much ljves to watch gouillas. Online zoo is one jf the ways
+                    to instill a love for animals.The best online zoo I’ve met.
+                    My son delighted very much ljves to watch gouillas.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="wrap_story">
+              <article class="story">
+                <div class="modal_close"></div>
+                <figure>
+                  <img src="./assets/images/user2.jpg" />
+                  <figcaption>
+                    <p class="user_name">Fredericka Michelin</p>
+                    <div>
+                      <p class="user_data">Local Austria</p>
+                      <p class="user_data">Yesterday</p>
+                    </div>
+                  </figcaption>
+                </figure>
+                <div class="testimonial">
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="wrap_story">
+              <article class="story">
+                <div class="modal_close"></div>
+                <figure>
+                  <img src="./assets/images/user3.jpg" />
+                  <figcaption>
+                    <p class="user_name">Mila Riksha</p>
+                    <div>
+                      <p class="user_data">Local Austria</p>
+                      <p class="user_data">Yesterday</p>
+                    </div>
+                  </figcaption>
+                </figure>
+                <div class="testimonial">
+                  <p>
+                    My son delighted very much ljves to watch gouillas. Online
+                    zoo is one jf the ways to instill a love for animals.The
+                    best online zoo I’ve met. My son delighted very much ljves
+                    to watch gouillas. Online zoo is one jf the ways to instill
+                    a love for animals.The best online zoo I’ve met. My son
+                    delighted very much ljves to watch gouillas. Online zoo is
+                    one jf the ways to instill a love for animals.The best
+                    online zoo I’ve met. My son delighted very much ljves to
+                    watch gouillas.
+                  </p>
+                  <p>
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="range">
+          <input
+            type="range"
+            class="input_range"
+            mim="0"
+            max="7"
+            step="1"
+            value="0"
+          />
+        </div>
+        <button class="button2 button_color_default">LEAVE FEEDBACK</button>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="sub1">
+          <div class="logo">
+            <a href="#">PetStory <span>online</span></a>
+          </div>
+          <form class="subscribe" action="#">
+            <h4>Subscribe to our news</h4>
+            <input
+              class="email"
+              required
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="button3 button3_color_default">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="sub2">
+          <a href="#" class="button2 button_color_default">
+            DONATE FOR VOLUNTEERS
+          </a>
+        </div>
+        <div class="sub3">
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/"><span>Facebook</span></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/"><span>Twitter</span></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"><span>Instagram</span></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/"><span>YouTube</span></a>
+              </li>
+            </ul>
+          </div>
+          <nav class="footer_menu">
+            <ul>
+              <li><a href="#" class="active-menu-item">About</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="#">Zoos</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="copy">
+            <a href="#">Designed by Alisa Samborskaya</a>
+            <a href="https://github.com/mishajan"
+              >Created by Mirshod Sharipov</a
+            >
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <div class="shadow"></div>
+  </body>
 </html>
