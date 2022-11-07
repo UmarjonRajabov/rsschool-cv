@@ -639,6 +639,30 @@ header .wrapper {
 .monkey {
   background: url(./assets/icons/monkey_icon.svg) 50% no-repeat;
 }
+.step_donation {
+  height: 168px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.turt {
+  background: url(./assets/icons/number_four.png) 50% no-repeat;
+}
+.x {
+  background: url(./assets/icons/x_icon.svg) 50% 55% no-repeat;
+}
+.panda {
+  background: url(./assets/icons/panda_icon.png) 50% no-repeat;
+  background-size: 100% 100%;
+}
+.backstage_input {
+  background: url(./assets/images/slowder.png);
+}
+
+.input-box {
+  margin: 30px 0 30px 0;
+
+}
+
 .step_img {
   width: 168px;
   height: 168px;
@@ -941,6 +965,37 @@ header .wrapper {
 .email + button:active {
   border: 1px solid #4b9200;
   color: #4b9200;
+}
+.amount {
+  box-sizing: border-box;
+  background: transparent;
+  margin-right: 6px;
+  height: 42px;
+  color: #bdbdbd;
+  padding: 0 9px;
+  width: 228px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  position: relative;
+  outline: none;
+}
+.amount:invalid {
+  border: 1px solid #d31414;
+}
+.amount:active {
+  border: 1px solid #4b9200;
+}
+.amount:invalid:focus + button {
+  border: 1px solid #d31414;
+  color: #d31414;
+}
+.amount + button:active {
+  border: 1px solid #4b9200;
+  color: #4b9200;
+}
+.select input{
+  margin: 15px 5px 15px 5px;
 }
 .social li {
   margin-top: 11px;
